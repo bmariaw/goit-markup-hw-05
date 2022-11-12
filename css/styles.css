@@ -384,13 +384,10 @@ img {
   height: 44px;
   margin-right: 10px;
   border-radius: 50%;
-
-  transition: background-color 250ms
-    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-list .social-item:hover,
-.team-list .social-item:focus {
+.team-list .social-link:hover,
+.team-list .social-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -411,6 +408,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
+
+  transition: background-color 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-list .social-item:last-child {
@@ -550,9 +551,6 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-
-  transition: background-color 250ms
-    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .connect .social-link {
@@ -561,14 +559,18 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
+
+  transition: background-color 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .connect .social-icon {
   fill: #ffffff;
 }
 
-.connect .list .item:hover,
-.connect .list .item:focus {
+.connect .list .social-link:hover,
+.connect .list .social-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -770,10 +772,10 @@ img {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.works .works-item:hover .text,
-.works .works-item:focus .text,
-.works .works-item:hover .thumb::before,
-.works .works-item:focus .thumb::before {
+.works .link:hover .text,
+.works .link:focus .text,
+.works .link:hover .thumb::before,
+.works .link:focus .thumb::before {
   opacity: 1;
   transform: translateY(0);
 }
@@ -787,6 +789,8 @@ img {
 .projects .link {
   display: inline-block;
   text-decoration: none;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   background: #ffffff;
 }
